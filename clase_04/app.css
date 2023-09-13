@@ -1,0 +1,74 @@
+a {color: brown;
+text-decoration: none;}
+
+
+/*hover es cuando pasas el mouse por arriba*/
+h1:hover {
+    color: aqua;
+    font-weight: bold;}
+
+a:visited {color: blueviolet;
+}
+
+a:active {background-color: blue;} /*es cuando haces cklick*/
+
+/*link y visited son propias de un vinculo*/
+
+a:link {color:rgb(90, 13, 66)}
+
+/*estos son elementos html*/
+
+/*bordes, */
+
+/*un div es un contenedor, se puede ponerle las caracteristicas que quieras*/
+/*border radius, es la parte de arriba del div*/
+/*border bottom left radius son los bordes de abajo o arriba*/
+/*height es el tamaño a lo largo del div*/
+
+div { background-color: rgb(236, 63, 222);
+      border-width: 10px solid blue;
+    border-style:  rgb(0, 255, 34);
+    border-color: red;
+    border: 10px groove;
+    border-radius: 5%;
+    width: max-content;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 120px;
+}
+
+/*border radius son los bordes redondeados*/
+img {
+        height: auto;
+        border: 5px solid;
+        border-color: rgb(255, 0, 106);
+        border-radius: 10px;}
+        
+
+/*subrayar elemento con border*/
+
+ol li {
+    list-style-type:upper-roman;
+    list-style-position:inside;
+    list-style-image: url("./img/herramientas-para-reparar.png");
+    }
+
+    /*al modificar el body, se modifica todo el fondo, 
+    ya que es el total de contenido*/
+body {
+    background-color: rgb(255, 255, 255);
+    background-image: url("./img/gato\ grande.png");
+    background-size:auto;
+}
+
+/*width max content es para ajustarse al contenido de la letra
+font size tamaño de letra
+*/
+
+ol h6 {
+    color:rgb(255, 255, 255);
+    background-color: blueviolet;
+    width: max-content;
+    font-size: 20px;}
+
+h1 {color:rgb(241, 3, 3)}

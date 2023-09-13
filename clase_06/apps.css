@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    background-color: rgb(214, 135, 165);
+    color: blue;
+    
+ 
+
+}
+
+/*fit content es para que se acomode, no se desborda como auto*/
+.logo {
+    width: 3em;
+    height: fit-content;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-top:2em;
+}
+
+.tituloprincipal { 
+    font-family: 'Bungee', cursive;
+    text-transform: uppercase;
+    text-decoration: underline solid;
+    font-size:3em;
+}
+
+section { padding: 10px;}
+
+footer {
+    text-align: center;
+}
+
+body {background-image: url(./imagenes/pastel-delicioso-dulce-fresas-baiser-plato.jpg);
+    }
+
+article {background-color: rgba(215,204,200,0.8);}

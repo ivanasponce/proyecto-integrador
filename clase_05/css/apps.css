@@ -1,0 +1,57 @@
+* {box-sizing: border-box;}
+/* el margin es por fuera del contenedor*/
+
+/*fit content es auto al maximo, tiene incorporado lapropiedad min content, no permitiendo que se desborde*/
+/* es padding es para que la primer letra se separe del margen*/
+
+h1 {
+    margin: 5px;
+    color: #880e4f;
+
+}
+
+form {
+    width: fit-content;
+    padding: 10px;
+    margin: 5px;
+    background-color: #f48fb1;
+    border: 2px groove #c51162;}
+
+
+/*margin top es para separar mas los renglones*/
+input[type= "text"],
+input[type= "email"],
+input[type="number"], 
+input[type="password"],
+textarea, select {
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            background-color: #fce4ec;
+            border: 1px solid #e91e63}
+
+
+
+input[type="checkbox"],
+input[type="radio"] {
+            margin-top: 3px;
+            margin-bottom: 5px;}
+
+
+input[type="file"]{
+            width: 100%;
+            margin-top: 3px;
+            margin-bottom: 5px;}
+
+input[type="submit"]
+            {width:100%;
+            color:#880e4f;
+        background-color: black;
+    margin-top: 10px;
+margin-bottom: 10px;}
+
+/*margin top espacio de arriba, margin bottom espacio abajo*/
+
+textarea {
+    resize: none
+}

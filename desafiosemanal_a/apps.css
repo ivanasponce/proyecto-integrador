@@ -1,0 +1,50 @@
+body {background-color: rgb(40, 47, 67);}
+
+h1 {background-color: rgb(255, 255, 255);
+text-align: center;
+color: rgb(103, 149, 146);
+font-family: Impact, Charcoal, sans-serif;
+font-size: 50px ;}
+
+p {
+    /*color: rgb(222, 202,196 );*/
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    }
+
+
+
+h2 {font-family:sans-serif;
+    font-style: italic;
+    font-weight: 1000;
+    color: rgb(222, 202, 196);
+    text-transform:initial;}
+
+img {
+    border: 5px solid rgb(222, 202, 196)  ;
+    margin-left: 40px;}
+
+    
+#productos {color: rgb(255, 255, 255) ;}
+
+
+#aspiradora {color: rgb(222,202,196);}
+
+
+
+div , #celular {color: rgb(103, 149, 146);}
+#celularfoto {border: 5px solid rgb(103, 149, 146);}
+
+
+
+#consolaid , #consola {color: rgb(191, 196, 207);}
+#consolafoto {border: 5px solid rgb(191, 196, 207);}
+
+
+
+
+#home , #homeid  {color: rgb(144, 151, 164);}
+#homet {border: 5px solid rgb(144, 151, 164);}
+
+#tvdiv , #tv {color: rgb(171, 176, 179);}
+#televisor {border: 5px solid rgb(171, 171, 179);}

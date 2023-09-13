@@ -1,0 +1,84 @@
+* {box-sizing: border-box;}
+
+#logodisney {width: 400px;
+            height: 250px;}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:150;
+    letter-spacing: 15px;
+    color: rgb(187,83,151);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:1000;
+    font-size: 15px;
+    letter-spacing: 8px ;
+    color: rgb(187,83,151) ;
+    padding-bottom: 8px;
+    padding-top: 10px;
+}
+
+p {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(59,99,166);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+.imgpop{
+    width: 350px;
+    height: 180px;
+    margin-left: 10px;
+    float: right;
+}
+
+.imgcaribbean {
+    width: 350px;
+    height: 160px;
+    margin-right: 10px;
+    float: left;
+}
+
+.imganimal {
+    width: 350px;
+        height: 180px;
+        margin-left: 10px;
+        float: right;
+}
+
+
+.mickey {
+   width: 100%;
+   padding-bottom: 1%;
+}
+
+@media (max-width: 576px) 
+
+{
+    h1 {
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #logodisney {width: 50vw;
+    height: auto;}
+
+   .imganimal , .imgcaribbean , .imgpop 
+   {margin-bottom: 5px;}
+    
+   p {padding: 5px;}
+
+    }
+
+
+
