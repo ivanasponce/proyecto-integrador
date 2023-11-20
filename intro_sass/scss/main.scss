@@ -1,0 +1,21 @@
+$color1: green; //var global
+$colores: (black, brown, orange);// variable de multiple valor, arranca desde 21
+
+
+h1 {color: red;}
+
+
+
+main {
+    $color2: violet; //var local
+    background-color: gold;
+    border: 3px solid nth($colores, 2);
+
+    div{
+        border: 2px solid pink;
+    }
+
+    .subtitulo {
+            color: blue;
+        }
+}

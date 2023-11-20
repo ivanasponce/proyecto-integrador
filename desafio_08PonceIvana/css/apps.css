@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+* {
+    background-color:rgb(31, 32, 35);
+    font-family:'Poppins', sans-serif;
+ 
+}
+
+body {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+
+.contenedorprincipal{
+    border-top: 15px solid rgb(77, 107, 99);
+    border-bottom: 15px solid rgb(77, 107, 99);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 15px solid rgb(31, 32, 35);
+    border-right: 15px solid rgb(31, 32, 35);
+
+   
+}
+
+.em-muscle {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+h1 {
+    font-family: url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+
+}
+
+@media (max-width: 700px) {
+
+   body {
+    margin-left: 10px;
+    margin-right: 10px;
+   }
+}
+
+.encabezado, .em-man-raising-hand, .em-eyes, .em-iphone, .em-e-mail, .em-woman-biking, .em-man-cartwheeling,.titulo1, legend {
+    background-color: rgb(77,107,99);
+    border-radius: 5px;
+    min-height: min-content;
+}
+
+.contenedordatos {
+    border-top: 20px solid rgb(31, 32, 35);
+    
+
+}
+
+
+h2, .titulo1 {
+    text-transform: uppercase;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+   font-size: 10px;
+   letter-spacing: -1px;
+    font-weight: normal;
+}
+
+fieldset, form, label, .titulosexo, .sexoopciones, p, .div1, .div2 {
+    background-color: rgb(226, 215, 223);
+    margin-bottom: 6px;
+    margin-top: 6px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.formprincipal{
+    display: flex;
+    flex-direction: column;
+  text-align: center;
+}
+
+textarea {
+    height: 100px;
+}
+
+.titulosexo {
+    margin-top: 2px;
+}
+
+input, select, textarea{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(112, 110, 110);
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 3px;
+    color: rgb(100, 99, 98);
+    text-align: end;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+input:focus,
+textarea:focus {
+    background-color: rgb(81, 104, 100);
+    border: 1px solid black;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    text-align: end;
+}
+
+
+
+select, option {
+    font-family: 'Roboto', sans-serif;
+   color: rgb(0, 0, 0);
+   background-color: rgb(255, 255, 255);
+
+}
+
+.sexoopciones {
+    display: flex;
+    flex-direction:initial;
+    align-items: center center;
+    align-content: center center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 45%;
+    margin-right: 45%;
+    
+}
+
+.color-verde{
+    background-color: rgb(167, 189, 185);
+
+}
+
+.divseparador {
+    border-top: 10px dotted rgb(188, 193, 191);
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+option, select {
+    color: rgb(61, 61, 65);
+}
+
+.div1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+p {
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+
+.sede,
+input[type="checkbox"],
+label {
+    display: flex;
+    margin-right: 50px;
+    margin-left: 10px;
+
+}
+
+
+input[type="checkbox"],
+label {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: -8px;
+}
+
+.ultimoparrafo {
+margin-left: 10px;
+font-size: small;
+}
+
+.sede {
+margin-left: 10px;
+
+}
+
+input::placeholder {
+color: rgb(185, 180, 185);
+font-family: 'Roboto', sans-serif;
+font-weight:lighter;
+font-size: 15px;
+text-align:end;
+}
+
+
+.campo, .opciones, label[for="novedades"],[for="condiciones"] {
+    background-color: rgb(31, 32, 35);
+    color: rgb(255, 255, 255);
+}
+
+.campo {
+    font-size: small;
+    padding-bottom: 15px;
+}
+
+.opciones {
+    padding-top: 15px;
+}
+
+button {
+    background-color: rgb(43, 58, 56);
+    border: 1px solid rgb(100, 100, 100);
+    padding: 10px;
+    border-radius: 2px;
+    color: rgb(118, 133, 133);
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+button:focus {
+    background-color: rgb(168, 190, 189);
+        padding: 10px;
+        border-radius: 2px;
+        color: rgb(87, 106, 107);
+        font-family: 'Roboto', sans-serif;
+}
+
+.divbotones {
+    text-align: center;
+}
+.btn1 {
+    margin-left: 10px;
+    margin-right: 10px;
+}

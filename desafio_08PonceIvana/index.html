@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/apps.css">
+    <link rel="stylesheet" href="./css/estilos-futuro.css" disabled>
+    <link rel="stylesheet" href="./css/estilos-pelicula.css" disabled>
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    
+    <title>Afiliación</title>
+</head >  
+
+<button onclick="alternarEstilo()" id="cambiar-estilos">Cambiar Estilos</button>
+
+<body>
+
+    <div class="contenedorprincipal">
+    <header>
+        <h1> Vení al Gym!   </h1>
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="em-muscle">
+        <span class="em em-muscle" aria-role="presentation" aria-label="biceps"></span>
+    </header>
+    </div>
+
+
+    <main>
+    <div class="contenedordatos">
+        <fieldset class="fieldset1">
+        <legend>
+            <div class="encabezado">
+            <span class="em em-man-raising-hand" aria-role="presentation" aria-label="hombre"></span>
+            <h2 class="titulo1">Datos personales</h2>
+            <span class="em em-eyes" aria-role="presentation" aria-label="ojos"></span>
+            </div>
+        </legend>
+
+
+
+        <form class="formprincipal">
+            
+            <label for="idnombre">Nombre:*</label>
+            <input class="cambiaColor" id="idnombre" type="text" name="nombre" required> <br>
+
+            <label for="idapellido">Apellido:*</label>
+            <input class="cambiaColor" id="idapellido" type="text" name="apellido" required> <br>
+
+            <label for="iddni">Documento:*</label>
+            <input class="cambiaColor" id="iddni" type="number" name="dni" required> <br>
+
+            <label for="nacionalidad">Nacionalidad: *</label>
+            <select id="nacionalidad" required>
+                <option class="seleccionar" value="">-Seleccionar-</option>
+                    <option value="arg">Argentina</option>
+                    <option value="br">Brasileña</option>
+                    <option value="ury">Uruguaya</option>
+                    <option value="otra">Otra</option>
+            </select>
+            <br>
+
+            <label for="mensaje">Contanos un poco de vos...</label>
+            <textarea class="cambiaColor" name="mensaje" id="idmensaje" cols="20" rows="2"></textarea> <br>
+            
+           
+           <p class="titulosexo">Sexo:*</p>
+            <div class="sexoopciones">
+            <input id="femenino" type="radio" name="sexo" value="femenino">
+            <label for="femenino">Femenino</label>
+
+            <input id="masculino" type="radio" name="sexo" value="masculino">
+            <label for="masculino">Masculino</label>
+
+            <input id="otrosexo" type="radio" name="sexo" value="otrosexo">
+            <label for="otrosexo">Otro</label>
+            </div>
+        </fieldset>
+    </div>
+
+<div class="divseparador"></div>
+
+    <div class="contenedordatos">
+      
+        <fieldset class="fieldset1">
+        <legend>
+            <div class="encabezado">
+            <span class="em em-iphone" aria-role="presentation" aria-label="telefono"></span>
+            <h2 class="titulo1">Datos de contacto</h2>
+            <span class="em em-e-mail" aria-role="presentation" aria-label="correo"></span>
+            </div>
+            </legend>
+
+        <div class="div1">
+        <label for="idtelefono">Teléfono:*</label>
+        <input id="idtelefono" type="text" name="telefono" placeholder="Código de área y número" maxlength="10" required> 
+        <br>
+        <label for="idemail">Dirección de correo electrónico:*</label>
+        <input id="idemail" type="email" name="idemail" placeholder="Ej: mail@gmail.com" required>
+        </div>
+
+        </fieldset>
+   
+    </div>
+
+  
+    <div class="divseparador"></div>
+
+
+
+
+
+
+
+    <div class="contenedordatos2">
+        <fieldset class="fieldset1">
+            <legend>
+                <div class="encabezado">
+                    <span class="em em-woman-biking" aria-role="presentation" aria-label="ciclissta"></span>
+                    <h2 class="titulo1">Actividades</h2>
+                    <span class="em em-man-cartwheeling" aria-role="presentation" aria-label="pirueta"></span>
+                </div>
+            </legend>
+    
+            
+                <p class="ultimoparrafo">Por favor, indicá cuáles actividades te interesan</p>
+
+                <p class="sede">Sede Palermo:</p>
+                <input id="basquet" type="checkbox" name="basquet" value="basquet">
+                <label for="basquet">Básquet</label>
+                <input id="boxeo" type="checkbox" name="boxeo" value="boxeo">
+                <label for="boxeo">Boxeo</label>
+                <input id="futbol" type="checkbox" name="futbol" value="futbol">
+                <label for="futbol">Fútbol</label>
+                <input id="tenis" type="checkbox" name="tenis" value="tenis">
+                <label for="tenis">Tenis</label>
+                <p class="sede">Sede Rosario:</p>
+               
+                <input id="basquet1" type="checkbox" name="basquet1" value="basquet1">
+                <label for="basquet1">Básquet</label>
+                <input id="boxeo1" type="checkbox" name="boxeo1" value="boxeo1">
+                <label for="boxeo1">Boxeo</label>
+                <input id="futbol1" type="checkbox" name="futbol1" value="futbol1">
+                <label for="futbol">Fútbol</label>
+                <input id="tenis1" type="checkbox" name="tenis1" value="tenis1">
+                <label for="tenis1">Tenis</label>
+            
+        </fieldset>
+    </div>
+
+
+
+
+    <div class="opciones">
+    
+            <input id="condiciones" type="checkbox" name="condiciones" value="condiciones" >
+            <label for="condiciones">Acepto las condiciones *</label>
+            <br>
+            <input id="novedades" type="checkbox" name="novedades" value="novedades">
+            <label for="novedades">Deseo recibir novedades</label> <br>
+       
+
+        <p class="campo">*: campo obligatorio.</p>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    * {padding-left: 2px;}
+
+
+header, .encabezado {display: flex;
+    line-height: 15px;}
+
+.em-muscle { 
+    padding-top: 40px;}
+
+.encabezado {
+    padding-top: 5px;}
+
+.em-man-raising-hand, .em-eyes, .em-iphone, .em-e-mail, .em-woman-biking, .em-man-cartwheeling{
+    padding-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;}
+
+.contenedordatos{
+    padding-top: 0;
+    padding-bottom: 10px;
+    margin-left: 5px;}
+
+.titulo1  {
+    font-weight: 200;
+    font-size: large;
+    padding: 5px;}
+
+fieldset {
+    border-style: solid;
+    border-color: rgb(83, 77, 77);
+    border-width: 1px;}
+
+.formprincipal{
+    margin-left: 5px;
+    font-size: 15px;}
+
+form {
+    padding-left: 10px;}
+</style>
+
+<script src="./js/js.js"></script>
+
+
+<div class="divbotones">
+<button class="btn1">Iniciar afiliación</button> <button class="btn2" type="reset">Restablecer</button>
+</div>
+
+</form>
+    </main>
+
+
+</body>
+</html>

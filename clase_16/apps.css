@@ -1,0 +1,32 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.imagen-de-fondo {
+    background-image: url("./imagenes/desktop-wallpaper-shadows-black-shade.jpg");
+    color: white;
+    height: 50vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center center;
+    padding: 2vw;
+
+}
+
+.imagen-de-fondo2 {
+    background-image: url(./imagenes/shadows-pattern-sunset-design.jpg);
+    height: 50vh;
+    width: 100vw;
+    padding: 2vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.gradiente-lineal {
+
+    
+}

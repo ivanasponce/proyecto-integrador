@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:wght@500&display=swap');
+
+
+
+.contenedordatos, .contenedordatos2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    background-image: linear-gradient(180deg, #000000, #10002b, #240046, #3c096c, #7b2cbf);
+    width: 700px;
+    height: max-content;
+    border-radius: 20px;
+   
+    box-sizing: 1px;
+    box-shadow: 8px 5px 50px 5px #fa0cc6;
+    font-family: 'Sometype Mono', monospace;
+    
+}
+
+.em-muscle {
+    padding: 20px;
+    margin-top: 8px;
+}
+
+
+
+input, label, textarea {
+    padding: 2px;
+    margin: 10px;
+
+}
+
+
+
+
+body {
+    background: #000000;
+    font-family: 'Dosis', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-image: url(./imagenes/pngtree-futuristic-sci-fi-abstract-blue-and-purple-triangle-neon-light-picture-image_1221688.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+
+        }
+
+
+h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    animation: neonGlow 2s infinite alternate;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 20px;
+    margin-bottom: 20px;
+}
+
+@keyframes neonGlow {
+    0% {
+        text-shadow: 0 0 10px #e0aaff,
+            0 0 20px #e0aaff,
+            0 0 22px #e0aaff,
+            0 0 40px #c77dff,
+            0 0 60px #c77dff,
+            0 0 80px #5a189a,
+            0 0 100px #5a189a,
+            0 0 140px #5a189a,
+            0 0 200px #5a189a;
+    }
+
+    100% {
+        text-shadow: 0 0 2px #e0aaff,
+            0 0 8px #e0aaff,
+            0 0 10px #e0aaff,
+            0 0 20px #c77dff,
+            0 0 30px #c77dff,
+            0 0 40px #5a189a,
+            0 0 50px #5a189a,
+            0 0 80px #5a189a,
+    }
+}
+
+.divseparador {
+    padding: 20px;
+}
+
+.contenedordatos, .contenedordatos2{
+    color: rgb(255, 255, 255);
+    border: 2px solid #fa0cc6;
+    padding: 15px;
+}
+
+
+.fieldset1 {
+    margin:none;
+    border: none;
+}
+
+
+input:focus {
+    background-color:#ffa1d0;
+}
+
+@media (max-width: 700px) {
+
+
+    h1 {
+    font-size: 50px;
+margin-top: 10px;
+letter-spacing: 10px;
+line-height: 50px;}
+
+.contenedordatos, .contenedordatos2 {
+    width: fit-content;
+    height: fit-content;
+    font-size: smaller;
+}
+
+
+    .opciones {
+    flex-direction: column;
+        }
+
+        button {
+            margin-top: 2px;
+        }
+}
+
+
+
+
+.opciones {
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 2px;
+        height: max-content;
+        width: fit-content;
+            border-radius: 20px;
+            border: 1px solid #ffffff;
+            box-sizing: 1px;
+            box-shadow: 8px 8px 80px 10px #ffffff;
+            font-family: 'Sometype Mono', monospace;
+            margin-bottom: 50px;
+            color: #ffffff;
+           display: flex;
+           backdrop-filter:blur(12px) ;
+           flex-direction: column;
+           align-content: center;
+           width: 100%;
+}
+
+button {
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 2px;
+    padding: 15px;
+    color: #ffffff;
+    font-weight: 700;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    letter-spacing: 2px;
+    box-shadow: 8px 5px 50px 5px #0ccafa;
+}
+
+button:first-child:hover {
+    background: linear-gradient(90deg,#020130, #140257,#19075c,#5638ff);
+}
+
+button:last-child:hover {
+    background: linear-gradient(90deg, #020130,#140257,#19075c, #5638ff);
+}
+
+button:first-child:before,
+button:last-child:before
+ {content: '';
+    position: absolute;
+    background: inherit;
+    top: -5px;
+    bottom: -5px;
+    right: -5px;
+    left: -5px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity 0.5s;
+
+}
+
+.divbotones {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.contenedorprincipal {
+    margin-bottom: 20px;
+}
