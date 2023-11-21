@@ -3,4 +3,21 @@
 
 .footer {
     grid-area: footer;
+    background-color: rgb(249, 226, 142);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
+
+.logoredes {
+    width: 50px;
+}
+
+.copy {
+    font-weight: bold;
+    font-family: 'PT Sans', sans-serif;
+    margin-right: 20%;
+}
+

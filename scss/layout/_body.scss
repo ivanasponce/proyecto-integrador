@@ -1,10 +1,20 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
 
+$_padding: 0.5vw;
+
 body {
     display: grid;
     grid-template-areas: 
     "header"
     "main"
     "footer";
+    background: linear-gradient(190deg, rgb(155, 99, 22), rgb(196, 149, 84), rgb(221, 198, 130));
+
+    gap: 1vw;
+    padding: $_padding;
+    width: calc(100% - (2*$_padding));
+    margin-left: $_padding;
+
+    
 }

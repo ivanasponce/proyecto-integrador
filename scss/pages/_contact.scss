@@ -1,0 +1,88 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+.form__container {
+    display: flex;
+    background-color: rgb(255, 212, 125);
+    height: 100vh;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    padding-top: 2%;
+    border-radius: 10%;
+    box-shadow: 5px 5px 35px 15px rgb(202, 159, 65);
+    margin-top: 80px;
+
+    @media (max-width: 600px) {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 46%;
+        }
+
+                @media (max-width: 400px) {
+                    padding-left: 5%;
+                    margin-right: 5%;
+                    margin-top: 60%;
+                    height: 500px;
+                }
+
+}
+
+textarea {
+    resize: none;
+}
+
+.form__title {
+    margin-bottom: 12px;
+}
+
+
+label {
+    font-size: 20px;
+
+    @media (max-width: 500px) {
+            font-size: 16px;
+        }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+}
+
+.confirmation_message {
+    font-size: 25px;
+    margin-top: 25%;
+}
+
+.direction {
+  
+    display: flex ;
+    flex-direction: column;
+ 
+   align-items: center;
+   margin-top: 12px;
+
+   
+
+   &__title {
+   
+    margin-top: 12px;
+    margin-bottom: 0;
+    border: none;
+   }
+
+   
+}
+
+
+iframe {
+    width: 80%;
+}

@@ -8,6 +8,7 @@
     <meta name="keywords" content="tienda, proyecyo, integrador, don galeppi, pastas, restaurante, pastas frescas, argentina, buenos aires, delivery, lanus">
     <meta name="author" content="Ivana Soledad Ponce">
 
+
     <title>Don Galeppi pastas</title>
 
     <link rel="shortcut icon" href="./images/gallery/logo.jpg" type="image/x-icon">
@@ -18,62 +19,208 @@
 <body class="home">
 
     <header class="header">
-        <!--aca va el logo img-->
-        <h1>Don Galeppi pastas</h1>
+
+        <img class="header__logo" src="./images/gallery/logo_ROSTRO.png" alt="Logo">
+        <h1 class="header__title">Don Galeppi pastas</h1>
+
+       
 
         <nav class="navbar">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-            </ul>
-        </nav>
+            <ul class="navbar__menu">
+                <li><a class="navbar__item" href="./index.html">Inicio</a></li>
+                <li><a class="navbar__item" href="./nosotros.html">Nosotros</a></li>
+                <li><a class="navbar__item" href="./contacto.html">Contacto</a></li>
+                </ul>
+                
+                
 
+            
+        </nav>
+        <div class="cont_shoppingcart">
+            <img class="shoppingcart" src="./images/gallery/carritod.png" alt="carrito">
+            <button class="button_shoppingcart" onclick="showCartSummary()">Ver Carrito</button>
+        </div>
+        <div id="cart-summary" class="cart-summary"></div>
 
     </header>
 
     <main class="main">
-        <section>
-            <div>
-                <div>
-                    <h4>Primer Slide</h4>
-                    <img src="" alt="imagen 1">
+        <section class="section section--slider">
+            <div class="slider">
+                <div class="slider__one">
+                    <h4 class="slider__title">Envíos a domicilio sin cargo</h4>
+                    <img class="slider__image" src="./images/gallery/logo_fideos_di_mare.jpg"
+                        alt="fideos_con_camarones">
                 </div>
-                <div>
-                    <h4>Segundo Slide</h4>
-                    <img src="" alt="imagen 1">
+                <div class="slider__two">
+                    <h4 class="slider__title">Efectivo 20%OFF</h4>
+                    <img class="slider__image" src="./images/gallery/paella_foto.jpg" alt="paella">
                 </div>
-                <div>
-                    <h4>Tercer Slide</h4>
-                    <img src="" alt="imagen 1">
+                <div class="slider__three">
+                    <h4 class="slider__title">Lunes 2x1 en ñoquis</h4>
+                    <img class="slider__image" src="./images/gallery/ñoquis.jpg" alt="ñoquis">
                 </div>
             </div>
         </section>
 
 
-        
-        <section>
-            <h3>galeria de imagenes</h3>
-            <figure>
-            <img src="" alt="descripcion foto">
-            <h4>nombre del primer producto</h4>
-            <p>lorem</p>
-            <button>Agregar</button>
-            <span>0</span>
-            <button>Quitar</button>
+        <h3 class="gallery">Nuestro Menú</h3>
+
+        <div class="search__form">
+            <input class="search__text" type="text" placeholder="Buscar productos..." oninput="searchProducts()">
+            <button class="button--product button--sm" onclick="searchProducts()">Buscar</button>
+        </div>
+
+        <section class="section section--products">
+
+            <figure class="card card--product">
+                <img class="card__image" src="./images/gallery/agñolotis.jpg" alt="agñolottis">
+                <h4 class="card__title">Porción de agñolottis.</h4>
+                <p class="card__text">Agñolottis al mediterráneo.</p>
+                <span class="card__price">4500</span>
+                <button class="button button--sm button--add"
+                    onclick="addToCart('Porción de agñolottis')">Agregar</button>
+                <span id="counter-Porción-de-agñolottis" class="card__counter">0</span>
+                <button class="button button--sm button--remove"
+                    onclick="removeFromCart('Porción de agñolottis')">Quitar</button>
             </figure>
-        
+
+            <figure class="card card--product">
+                <img class="card__image" src="./images/gallery/capelettis.jpg" alt="Capelettis">
+                <h4 class="card__title">Porción de capelettis.</h4>
+                <p class="card__text">De carne y verdura, con estofado de albóndigas.</p>
+                <span class="card__price">4500</span>
+                <button class="button button--sm button--add"
+                    onclick="addToCart('Porción de capelettis')">Agregar</button>
+                <span id="counter-Porción-de-capelettis" class="card__counter">0</span>
+                <button class="button button--sm button--remove"
+                    onclick="removeFromCart('Porción de capelettis')">Quitar</button>
+            </figure>
+
+            <figure class="card card--product">
+                <img class="card__image" src="./images/gallery/caseros.jpg" alt="fideos_caseros">
+                <h4 class="card__title">Porción de fideos caseros.</h4>
+                <p class="card__text">Fideos caseros con estofado de carne.</p>
+
+                <span class="card__price">4500</span>
+                <button class="button button--sm button--add"
+                    onclick="addToCart('Porción de fideos caseros')">Agregar</button>
+                <span id="counter-Porción-de-fideos-caseros" class="card__counter">0</span>
+                <button class="button button--sm button--remove"
+                    onclick="removeFromCart('Porción de fideos caseros')">Quitar</button>
+            </figure>
+
+
+            <figure class="card card--product">
+                <img class="card__image" src="./images/gallery/mostacholes.jpg" alt="fideos_mostacholes">
+                <h4 class="card__title">Porción de fideos.</h4>
+                <p class="card__text">Fideos mostacholes con salsa fileto.</p>
+
+                <span class="card__price">4500</span>
+                <button class="button button--sm button--add"
+                    onclick="addToCart('Porción de mostacholes')">Agregar</button>
+                <span id="counter-Porción-de-mostacholes" class="card__counter">0</span>
+                <button class="button button--sm button--remove"
+                    onclick="removeFromCart('Porción de mostacholes')">Quitar</button>
+            </figure>
+
+
+            <figure class="card card--product">
+                <img class="card__image" src="./images/gallery/lasagña.jpg" alt="lasagña">
+                <h4 class="card__title">Porción de lasagña.</h4>
+                <p class="card__text">Lasagña de carne, verdura jamón y queso, con salsa blanca.</p>
+
+                <span class="card__price">4500</span>
+                <button class="button button--sm button--add" onclick="addToCart('Porción de lasagña')">Agregar</button>
+                <span id="counter-Porción-de-lasagña" class="card__counter">0</span>
+                <button class="button button--sm button--remove"
+                    onclick="removeFromCart('Porción de lasagña')">Quitar</button>
+            </figure>
+
+
+            <figure class="card card--product">
+                <img class="card__image" src="./images/gallery/raviolones.jpg" alt="Raviolones">
+                <h4 class="card__title">Porción de raviolones.</h4>
+                <p class="card__text">De muzzarella y jamón, con salsa de mariscos.</p>
+
+                <span class="card__price">4500</span>
+                <button class="button button--sm button--add"
+                    onclick="addToCart('Porción de raviolones')">Agregar</button>
+                <span id="counter-Porción-de-raviolones" class="card__counter">0</span>
+                <button class="button button--sm button--remove"
+                    onclick="removeFromCart('Porción de raviolones')">Quitar</button>
+            </figure>
+
+            <figure class="card card--product">
+                <img class="card__image" src="./images/gallery/mini.jpg" alt="mini_sorrentinos">
+                <h4 class="card__title">Porción de mini sorrentinos.</h4>
+                <p class="card__text">De 4 quesos, con salsa bologñesa.</p>
+
+                <span class="card__price">4500</span>
+                <button class="button button--sm button--add"
+                    onclick="addToCart('Porción de mini sorrentinos')">Agregar</button>
+                <span id="counter-Porción-de-mini-sorrentinos" class="card__counter">0</span>
+                <button class="button button--sm button--remove"
+                    onclick="removeFromCart('Porción de mini sorrentinos')">Quitar</button>
+            </figure>
+
+
+            <figure class="card card--product">
+                <img class="card__image" src="./images/gallery/romana.jpg" alt="ñoquis a la romana">
+                <h4 class="card__title">Porción de ñoquis a la romana.</h4>
+                <p class="card__text">Ñoquis rellenos con jamón y queso, con salsa bologñesa.</p>
+
+                <span class="card__price">4500</span>
+                <button class="button button--sm button--add"
+                    onclick="addToCart('Porción de ñoquis a la romana')">Agregar</button>
+                <span id="counter-Porción-de-ñoquis-a-la-romana" class="card__counter">0</span>
+                <button class="button button--sm button--remove"
+                    onclick="removeFromCart('Porción de ñoquis a la romana')">Quitar</button>
+            </figure>
+
+            <figure class="card card--product">
+                <img class="card__image" src="./images/gallery/sorrentinos.jpg" alt="sorrentinos">
+                <h4 class="card__title">Porción de sorrentinos.</h4>
+                <p class="card__text">De pollo y verdura, con salsa fileto.</p>
+
+                <span class="card__price">4500</span>
+                <button class="button button--sm button--add"
+                    onclick="addToCart('Porción de sorrentinos')">Agregar</button>
+                <span id="counter-Porción-de-sorrentinos" class="card__counter">0</span>
+                <button class="button button--sm button--remove"
+                    onclick="removeFromCart('Porción de sorrentinos')">Quitar</button>
+            </figure>
+
+            <figure class="card card--product">
+                <img class="card__image" src="./images/gallery/ñoquis_foto2.jpg" alt="ñoquis">
+                <h4 class="card__title">Porción de ñoquis.</h4>
+                <p class="card__text">Ñoquis de papa, con estofado de albóndigas.</p>
+
+                <span class="card__price">4500</span>
+                <button class="button button--sm button--add" onclick="addToCart('Porción de ñoquis')">Agregar</button>
+                <span id="counter-Porción-de-ñoquis" class="card__counter">0</span>
+                <button class="button button--sm button--remove"
+                    onclick="removeFromCart('Porción de ñoquis')">Quitar</button>
+            </figure>
+
+
+        </section>
+
+        <section class="section section--add-product">
+            <h2 class="add-product-title">Agregar Nuevo Producto</h2>
+            <p>¿Cómo agregar un nuevo producto?</p>
+            <a href="./product.html" class="add-product-link">Click acá para crear un producto</a>
         </section>
 
     </main>
 
     <footer class="footer">
-        <span>&copy;2023, Todos los derechos reservados</span>
-
+        <span class="copy">&copy;2023, Todos los derechos reservados</span>
+        <a href="https://www.facebook.com/PastasDonGaleppi/"><img class="logoredes" src="./images/gallery/logo_fb.png"
+                alt="logo facebook"></a>
+        <a href="https://www.instagram.com/dongaleppi/"><img class="logoredes"
+                src="./images/gallery/2ee283998d0c05c64fd6abbcda556f01.png" alt="logo_instagram"></a>
     </footer>
-
-
-
-
-
 
 
     <script src="./js/main.js"></script>

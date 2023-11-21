@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esta página es una tienda de un restaurant">
+    <meta name="keywords"
+        content="tienda, proyecyo, integrador, don galeppi, pastas, restaurante, pastas frescas, argentina, buenos aires, delivery, lanus">
+    <meta name="author" content="Ivana Soledad Ponce">
+
+
+    <title>Don Galeppi pastas</title>
+
+    <link rel="shortcut icon" href="./images/gallery/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+
+<body class="home">
+
+    <header class="header">
+
+        <img class="header__logo" src="./images/gallery/logo_ROSTRO.png" alt="Logo">
+        <h1 class="header__title">Don Galeppi pastas</h1>
+
+
+
+        <nav class="navbar">
+            <ul class="navbar__menu">
+                <li><a class="navbar__item" href="./index.html">Inicio</a></li>
+                <li><a class="navbar__item" href="./nosotros.html">Nosotros</a></li>
+                <li><a class="navbar__item" href="./contacto.html">Contacto</a></li>
+            </ul>
+
+
+
+
+        </nav>
+        <div class="cont_shoppingcart">
+            <img class="shoppingcart" src="./images/gallery/carritod.png" alt="carrito">
+            <button class="button_shoppingcart" onclick="showCartSummary()">Ver Carrito</button>
+        </div>
+        <div id="cart-summary" class="cart-summary"></div>
+
+    </header>
+
+
+    <main>
+        <section class="section section--form">
+            <h2 class="form-title">Agregar Producto</h2>
+
+            <form id="productForm" onsubmit="return validateForm()" action="#" method="post">
+                <label for="name">Nombre:</label>
+                <input class="product" type="text" id="name" name="name" required>
+
+                <label for="price">Precio (formato válido: 100.00):</label>
+                <input class="product" type="text" id="price" name="price" pattern="^\d+(\.\d{1,2})?$"
+                    title="Formato válido: 100.00" required>
+
+                <label for="stock">Stock (solo números enteros):</label>
+                <input class="product" type="text" id="stock" name="stock" pattern="^\d+$"
+                    title="Formato válido: números enteros" required>
+
+                <label for="description">Descripción Corta:</label>
+                <textarea class="product" id="description" name="description" required></textarea>
+
+                <label for="photo">Foto:</label>
+                <input class="product" type="file" id="photo" name="photo" accept="image/*">
+
+                <button class="button--product" type="submit">Agregar</button>
+            </form>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <span class="copy">&copy;2023, Todos los derechos reservados</span>
+        <a href="https://www.facebook.com/PastasDonGaleppi/"><img class="logoredes" src="./images/gallery/logo_fb.png"
+                alt="logo facebook"></a>
+        <a href="https://www.instagram.com/dongaleppi/"><img class="logoredes"
+                src="./images/gallery/2ee283998d0c05c64fd6abbcda556f01.png" alt="logo_instagram"></a>
+    </footer>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

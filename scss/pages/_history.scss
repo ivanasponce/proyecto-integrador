@@ -1,0 +1,45 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+
+
+.cont__history{
+    display: flex;
+    background-color: rgb(255, 212, 125);
+    justify-content: center;
+    min-height: 80vh;
+    height: 60vh;
+    padding: 3vh;
+    margin-top: 80px;
+
+    @media (max-width: 500px) {
+            height: 100%;
+        }
+
+                  @media(max-width: 450px) {
+                      margin: 0;
+                      font-size: 16px;
+                      padding-top: 60%;
+        
+                  }
+}
+
+.photo {
+    width: 300px;
+    float: right;
+    margin: 3px;
+    border: 2px solid black;
+
+    @media(max-width: 450px) {
+            width: 200px;
+    
+        }
+
+
+}
+
+.text__history {
+    font-family: 'PT Sans', sans-serif;
+}
+
+

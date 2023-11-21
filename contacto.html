@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esta página es una tienda de un restaurant">
+    <meta name="keywords"
+        content="tienda, proyecyo, integrador, don galeppi, pastas, restaurante, pastas frescas, argentina, buenos aires, delivery, lanus">
+    <meta name="author" content="Ivana Soledad Ponce">
+
+
+    <title>Don Galeppi pastas</title>
+
+    <link rel="shortcut icon" href="./images/gallery/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+
+<body class="home">
+
+    <header class="header">
+
+        <img class="header__logo" src="./images/gallery/logo_ROSTRO.png" alt="Logo">
+        <h1 class="header__title">Don Galeppi pastas</h1>
+
+
+
+        <nav class="navbar">
+            <ul class="navbar__menu">
+                <li><a class="navbar__item" href="./index.html">Inicio</a></li>
+                <li><a class="navbar__item" href="./nosotros.html">Nosotros</a></li>
+                <li><a class="navbar__item" href="./contacto.html">Contacto</a></li>
+            </ul>
+
+
+
+
+        </nav>
+        <div class="cont_shoppingcart">
+            <img class="shoppingcart" src="./images/gallery/carritod.png" alt="carrito">
+            <button class="button_shoppingcart" onclick="showCartSummary()">Ver Carrito</button>
+        </div>
+        <div id="cart-summary" class="cart-summary"></div>
+
+    </header>
+
+
+    <main>
+        <div class="form__container">
+            <h1 class="form__title">Contacto</h1>
+            <form action="./contacto.html">
+
+                <label for="id-name">Nombre:*</label>
+                <input id="id-name" type="text" name="name" required> <br>
+
+                <label for="id-lastname">Apellido:*</label>
+                <input id="id-lastname" type="text" name="lastname" required> <br>
+
+                <label for="id-phone">Teléfono:*</label>
+                <input id="id-phone" type="text" name="phone" placeholder="Código de área y número" maxlength="10"
+                    required> <br>
+
+                <label for="id-email">Dirección de correo electrónico:*</label>
+                <input id="id-email" type="email" name="idemail" placeholder="Ej: mail@gmail.com" required> <br>
+
+                <label for="id-message">Escriba su mensaje</label>
+                <textarea id="id-message" name="message" cols="20" rows="2" required></textarea> <br>
+
+                <input id="id-news" type="checkbox" name="novedades" value="novedades">
+                <label for="id-news">Deseo recibir novedades</label> <br>
+
+
+                <button type="submit" class="button__form" onclick="sendConfirmation()">Enviar</button>
+
+            </form>
+
+
+
+        </div>
+
+        <div class="direction">
+            <h2 class="direction__title">¿Dónde estamos?</h2>
+            <iframe class="direction__iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.8412714057768!2d-58.38930222476575!3d-34.70918326307488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd3b3aafeb17%3A0x9271c2d522fb0bc5!2sItuzaing%C3%B3%201415%2C%20B1820KGK%20Lan%C3%BAs%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1700491966086!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <span class="copy">&copy;2023, Todos los derechos reservados</span>
+        <a href="https://www.facebook.com/PastasDonGaleppi/"><img class="logoredes" src="./images/gallery/logo_fb.png"
+                alt="logo facebook"></a>
+        <a href="https://www.instagram.com/dongaleppi/"><img class="logoredes"
+                src="./images/gallery/2ee283998d0c05c64fd6abbcda556f01.png" alt="logo_instagram"></a>
+    </footer>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

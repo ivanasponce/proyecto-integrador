@@ -1,0 +1,92 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.card {
+    background-color: #ffffff;
+    padding: 1vw;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5%;
+    box-shadow: 5px 3px 44px 6px rgb(64, 64, 64);
+    border-radius: 22px;
+
+    @media (max-width: 500px) {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        width: 300px;
+    }
+
+        &__image {
+            width: 50%;
+            height: 100%;
+            justify-content: center;
+            border: 1px solid rgb(121, 116, 116);
+        }
+
+        &__title {
+            color: rgb(0, 0, 0);
+            padding: 1%;
+        }
+
+        &__text {
+            color: rgb(0, 0, 0);
+            padding: 1%;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        &__price {
+            color: rgb(0, 0, 0);
+            font-weight: 900;
+            margin-bottom: 10px;
+            text-align: center;
+
+            &::before {
+                content: "$";
+            }
+        }
+    }
+
+    .gallery {
+        background-color: rgb(255, 242, 145);
+        font-family: 'PT Sans', sans-serif;
+        padding-top: 1rem;
+        padding-bottom: 0.625rem;
+        font-size: 25px;
+        text-align: center;
+
+        @media(max-width:500px) {
+            background-color: rgb(247, 238, 182);
+            font-size: 15px;
+            margin-bottom: 15px;
+
+        }
+    }
+
+
+.carrito {
+    margin-left: 2px;
+    width: 35px;
+}
+
+.quantity {
+    border-radius: 50%;
+    margin-bottom: 12px;
+    padding: 2px;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+
+
+.card:hover {
+    transform: scale(1.1);
+
+}
